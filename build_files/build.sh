@@ -105,6 +105,7 @@ HYPR_DEPS=(
 	qt6ct
 	rofi-wayland
 	slurp
+	swaybg
 	swappy
 	swaync
 	swww
