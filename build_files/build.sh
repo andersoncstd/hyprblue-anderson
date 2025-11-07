@@ -18,6 +18,7 @@ USE_SDDM=FALSE
 
 log "Enable Copr repos..."
 COPR_REPOS=(
+	zhangyi6324/noctalia-shell 
 	erikreider/SwayNotificationCenter # for swaync
 	errornointernet/packages
 	heus-sueh/packages                # for matugen/swww, needed by hyprpanel
@@ -157,6 +158,8 @@ fi
 NIRI_PKGS=(
 	niri
 	swaylock
+	nwg-dock
+	noctalia-shell
 	# alacritty
 	# brightnessctl
 	# fuzzel
