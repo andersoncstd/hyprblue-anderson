@@ -1,4 +1,4 @@
-export repo_organization := env("GITHUB_REPOSITORY_OWNER", "andersoncstd")
+export repo_organization := env("GITHUB_REPOSITORY_OWNER", "anderson")
 export image_name := env("IMAGE_NAME", "hyprblue-nvidia-andersoncstd")
 export default_tag := env("DEFAULT_TAG", "latest")
 export base_image := env("BASE_IMAGE", "ghcr.io/ublue-os/bluefin-dx-nvidia:latest")
