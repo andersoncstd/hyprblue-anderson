@@ -1,5 +1,5 @@
 export repo_organization := env("GITHUB_REPOSITORY_OWNER", "andersoncstd")
-export image_name := env("IMAGE_NAME", "hyprblue-nvidia-anderson")
+export image_name := env("IMAGE_NAME", "hyprblue-nvidia-andersoncstd")
 export default_tag := env("DEFAULT_TAG", "latest")
 export base_image := env("BASE_IMAGE", "ghcr.io/ublue-os/bluefin-dx-nvidia:latest")
 export bib_image := env("BIB_IMAGE", "quay.io/centos-bootc/bootc-image-builder:latest")
