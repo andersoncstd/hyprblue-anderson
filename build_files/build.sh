@@ -87,7 +87,7 @@ HYPR_DEPS=(
 	kvantum
 	# lib32-nvidia-utils
 	libgtop2
-	mako
+	#mako
 	matugen
 	mpv
 	# mpv-mpris
@@ -108,7 +108,7 @@ HYPR_DEPS=(
 	slurp
 	swaybg
 	swappy
-	swaync
+	#swaync
 	swww
 	tumbler
 	upower
