@@ -18,37 +18,37 @@ build-nvidia $tag=default_tag:
     just build "hyprblue-nvidia" "{{ tag }}" "ghcr.io/ublue-os/bluefin-dx-nvidia:latest"
 
 # Build the HyprBlue open video drivers variant (based on bluefin-dx)
-[group('Build Image')]
-build-open-video $tag=default_tag:
-    just build "hyprblue-open-video" "{{ tag }}" "ghcr.io/ublue-os/bluefin-dx:latest"
+# [group('Build Image')]
+# build-open-video $tag=default_tag:
+#     just build "hyprblue-open-video" "{{ tag }}" "ghcr.io/ublue-os/bluefin-dx:latest"
 
 # Build the HyprBazzite NVIDIA variant (based on bazzite-nvidia)
-[group('Build Image')]
-build-bazzite-nvidia $tag=default_tag:
-    just build "hyprbazzite-nvidia" "{{ tag }}" "ghcr.io/ublue-os/bazzite-nvidia:latest"
+# [group('Build Image')]
+# build-bazzite-nvidia $tag=default_tag:
+#     just build "hyprbazzite-nvidia" "{{ tag }}" "ghcr.io/ublue-os/bazzite-nvidia:latest"
 
 # Build the HyprBazzite open video drivers variant (based on bazzite)
-[group('Build Image')]
-build-bazzite-open-video $tag=default_tag:
-    just build "hyprbazzite-open-video" "{{ tag }}" "ghcr.io/ublue-os/bazzite:latest"
+# [group('Build Image')]
+# build-bazzite-open-video $tag=default_tag:
+#     just build "hyprbazzite-open-video" "{{ tag }}" "ghcr.io/ublue-os/bazzite:latest"
 
 # Build all HyprBlue variants (nvidia + open-video)
 [group('Build Image')]
 build-all-hyprblue $tag=default_tag:
     just build-nvidia "{{ tag }}"
-    just build-open-video "{{ tag }}"
+    # just build-open-video "{{ tag }}"
 
 # Build all HyprBazzite variants (nvidia + open-video)
-[group('Build Image')]
-build-all-bazzite $tag=default_tag:
-    just build-bazzite-nvidia "{{ tag }}"
-    just build-bazzite-open-video "{{ tag }}"
+# [group('Build Image')]
+# build-all-bazzite $tag=default_tag:
+#     just build-bazzite-nvidia "{{ tag }}"
+#     just build-bazzite-open-video "{{ tag }}"
 
-# Build all variants (HyprBlue + HyprBazzite, both nvidia and open-video)
-[group('Build Image')]
-build-all $tag=default_tag:
-    just build-all-hyprblue "{{ tag }}"
-    just build-all-bazzite "{{ tag }}"
+# # Build all variants (HyprBlue + HyprBazzite, both nvidia and open-video)
+# [group('Build Image')]
+# build-all $tag=default_tag:
+#     just build-all-hyprblue "{{ tag }}"
+#     just build-all-bazzite "{{ tag }}"
 
 # Check Just Syntax
 [group('Just')]
